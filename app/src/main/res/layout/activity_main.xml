@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_space_background" />
+
+    <com.example.fragments.PixelStarView
+        android:id="@+id/starView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/home_video"
+            android:letterSpacing="0.05"
+            android:shadowColor="#898989"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="0.01"
+            android:text="FRAGMENTS"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/home_video"
+            android:text="A RESET JOURNEY"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:letterSpacing="0.15"
+            android:shadowColor="#898989"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="0.01" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tapToStartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/home_video"
+        android:text="[TAP TO START]"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:letterSpacing="0.1"
+        android:shadowColor="#898989"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="0.01" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
